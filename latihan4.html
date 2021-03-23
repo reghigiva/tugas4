@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- memanggil jQuery -->
+	<script src="jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#daftar").addClass("merahkuning");
+		$(".subdaftar").addClass("kuninghitam");});</script>
+		<!-- script untuk mengubah warna-->
+		<style type="text/css">
+		.merahkuning{
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam{
+			color: white;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>paragraf pertama</p>
+	</div>
+	<div>
+		<ul id="daftar">
+			<li>item 1</li>
+			<li class="subdaftar">item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+</body>
+</html>

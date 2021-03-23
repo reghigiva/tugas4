@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- memanggil jQuery -->
+	<script src="jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		// script untuk menghilang, menampilkan, memudarkan
+		$(document).ready(function(){
+			$("#fadeout").click(function(){
+				$("#kotak").fadeOut("slow");
+			});
+			$("#fadein").click(function(){
+				$("#kotak").fadeIn("slow");
+			});
+			$("#fadeout1").click(function(){
+				$("#kotak").fadeTo("slow",0.3);
+			});
+		});
+	</script>
+	<!-- script untuk membuat kotak -->
+	<style type="text/css">
+		#kotak{
+			width: 400px;
+			height: 250px;
+			background: yellow;
+			border: 1px solid black;
+			margin-bottom: 15px
+		}
+		button{
+
+		}
+	</style>
+</head>
+<body>
+	<!-- menampilkan kotak beserta button -->
+	<div id="kotak"></div>
+	<button id="fadeout">fade out</button>
+	<button id="fadein">fade in</button>
+	<button id="fadeout1">fade to 0.3</button>
+</body>
+</html>

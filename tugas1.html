@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- memanggil jQuery -->
+	<script src="jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		//script untuk menampilkan dan menyembunyikan gambar
+		$(document).ready(function(){
+			$(".show1").click(function(){$("#photo1").show("slow")});
+			$(".hide1").click(function(){$("#photo1").hide("slow")});
+			$(".show2").click(function(){$("#photo2").show("slow")});
+			$(".hide2").click(function(){$("#photo2").hide("slow")});
+		});
+	</script>
+	<!-- mendesain laman web -->
+	<style type="text/css">
+		tr{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- tag akan menampilkan button -->
+<table>
+	<!-- memunculkan tombol -->
+	<tr>
+		<td><button class="show1">tampilkan foto 1</button></td>
+		<td><button class="show2">tampilkan foto 2</button></td>
+	</tr>
+	<!-- memunculkan gambar -->
+	<tr>
+		<td><button class="hide1">sembunyikan foto 1</button></td>
+		<td><button class="hide2">sembunyikan foto 2</button></td>
+	</tr>
+	<tr>
+		<td><p><img id="photo1" src="spiderman-kiri.jpg" width="200px" height="200px" hidden=""></p></td>
+		<td><p><img id="photo2" src="spiderman-kanan.jpg" width="200px" height="200px" hidden=""></p></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- memanggil jQuery -->
+	<script src="jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		// fungsi double klik
+		$(document).ready(function(){
+			$("div").dblclick(function(){
+				$(this).css({background:"red"});
+			});
+		});
+	</script>
+	<!-- script untuk membuat kotak dan mendesai tulisan -->
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			float: left;
+			margin: 15px;
+		}
+		p{
+			padding-left: 120px
+		}
+	</style>
+</head>
+<body>
+	<!-- menampilkan 4 buah kotak dan sebuah teks perintah -->
+	<p>klik 2x pada kotak untuk merubah warnanya</p>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
